@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Pivot.mate</title>
+  <meta name="description" content="Sign in to your Pivot.mate account. Automate operations your team can't scale.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Left Sidebar Branding Section -->
+    <aside class="brand-sidebar" aria-label="Pivot.mate Branding">
+      <div class="logo-container">
+        <svg width="123" height="28" viewBox="0 0 123 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_193_318)">
+            <path
+              d="M15.7143 22.2074L15.7143 5.79264C14.7668 5.13109 13.7084 4.63857 12.5974 4.34069L12.5974 16.2918L14.1558 17.1915L14.1558 23.0981C14.7036 22.8475 15.2251 22.549 15.7143 22.2074ZM11.5584 23.8791L11.5584 4.12097C10.4967 3.95442 9.43558 3.96503 8.44153 4.12097L8.44153 14.1956L9.99997 15.0951L9.99997 24C10.5301 24 11.0505 23.9587 11.5584 23.8791ZM7.40252 4.34063C6.304 4.63516 5.24452 5.12318 4.28568 5.7927L4.28568 12.0993L5.84413 12.999L5.84412 23.0981C6.34283 23.3264 6.86374 23.5149 7.40251 23.6594L7.40252 4.34063ZM3.24672 6.62509C1.2527 8.45004 -3.0827e-05 11.079 -3.09547e-05 14C-3.10823e-05 16.9197 1.25114 19.547 3.24672 21.3749L3.24672 6.62509Z"
+              fill="#C3F7E7" />
+            <path
+              d="M-3.09547e-05 14C-3.0827e-05 11.079 1.2527 8.45004 3.24672 6.62509L3.24672 21.3749C1.25114 19.547 -3.10823e-05 16.9197 -3.09547e-05 14Z"
+              fill="#C3F7E7" />
+            <path
+              d="M-3.09547e-05 14C-3.0827e-05 11.079 1.2527 8.45004 3.24672 6.62509L3.24672 21.3749C1.25114 19.547 -3.10823e-05 16.9197 -3.09547e-05 14Z"
+              fill="#C3F7E7" />
+            <path
+              d="M19.9999 14C19.9999 11.079 18.7472 8.45007 16.7531 6.62512L16.7531 21.375C18.7487 19.547 19.9999 16.9197 19.9999 14Z"
+              fill="#C3F7E7" />
+          </g>
+          <path
+            d="M30.344 20V8.32H34.168C34.9253 8.32 35.5813 8.464 36.136 8.752C36.7013 9.04 37.1333 9.45067 37.432 9.984C37.7413 10.5067 37.896 11.1253 37.896 11.84C37.896 12.544 37.7413 13.1627 37.432 13.696C37.1227 14.2293 36.6907 14.64 36.136 14.928C35.5813 15.216 34.9253 15.36 34.168 15.36H32.072V20H30.344ZM32.072 13.808H34.168C34.7653 13.808 35.24 13.632 35.592 13.28C35.9547 12.9173 36.136 12.4373 36.136 11.84C36.136 11.232 35.9547 10.752 35.592 10.4C35.24 10.048 34.7653 9.872 34.168 9.872H32.072V13.808ZM39.8418 20V18.464H42.1938V9.856H39.8418V8.32H46.3058V9.856H43.9538V18.464H46.3058V20H39.8418ZM51.1955 20L48.2355 8.32H50.0115L51.8835 16.096C52.0008 16.5547 52.1022 17.0133 52.1875 17.472C52.2835 17.92 52.3528 18.272 52.3955 18.528C52.4382 18.272 52.4968 17.92 52.5715 17.472C52.6568 17.0133 52.7582 16.5493 52.8755 16.08L54.7315 8.32H56.4595L53.4835 20H51.1955ZM61.6213 20.16C60.8959 20.16 60.2666 20.0267 59.7333 19.76C59.2106 19.4827 58.8053 19.088 58.5173 18.576C58.2399 18.0533 58.1013 17.4453 58.1013 16.752V11.568C58.1013 10.864 58.2399 10.256 58.5173 9.744C58.8053 9.232 59.2106 8.84267 59.7333 8.576C60.2666 8.29867 60.8959 8.16 61.6213 8.16C62.3466 8.16 62.9706 8.29867 63.4933 8.576C64.0266 8.84267 64.4319 9.232 64.7093 9.744C64.9973 10.256 65.1413 10.8587 65.1413 11.552V16.752C65.1413 17.4453 64.9973 18.0533 64.7093 18.576C64.4319 19.088 64.0266 19.4827 63.4933 19.76C62.9706 20.0267 62.3466 20.16 61.6213 20.16ZM61.6213 18.624C62.2079 18.624 62.6506 18.464 62.9493 18.144C63.2586 17.8133 63.4133 17.3493 63.4133 16.752V11.568C63.4133 10.96 63.2586 10.496 62.9493 10.176C62.6506 9.856 62.2079 9.696 61.6213 9.696C61.0453 9.696 60.6026 9.856 60.2933 10.176C59.9839 10.496 59.8293 10.96 59.8293 11.568V16.752C59.8293 17.3493 59.9839 17.8133 60.2933 18.144C60.6026 18.464 61.0453 18.624 61.6213 18.624ZM70.031 20V9.904H66.911V8.304H74.879V9.904H71.759V20H70.031ZM80.1688 20.16C79.7421 20.16 79.4008 20.0373 79.1448 19.792C78.8888 19.536 78.7608 19.1947 78.7608 18.768C78.7608 18.3307 78.8888 17.984 79.1448 17.728C79.4008 17.4613 79.7421 17.328 80.1688 17.328C80.6061 17.328 80.9474 17.4613 81.1928 17.728C81.4488 17.984 81.5768 18.3307 81.5768 18.768C81.5768 19.1947 81.4488 19.536 81.1928 19.792C80.9474 20.0373 80.6061 20.16 80.1688 20.16ZM85.6985 20V8.32H87.8265L88.9945 12.064C89.1118 12.416 89.2132 12.7573 89.2985 13.088C89.3838 13.408 89.4425 13.648 89.4745 13.808C89.5172 13.648 89.5758 13.408 89.6505 13.088C89.7358 12.7573 89.8318 12.416 89.9385 12.064L91.0585 8.32H93.1865V20H91.5545V16.064C91.5545 15.5627 91.5652 15.008 91.5865 14.4C91.6185 13.7813 91.6612 13.1627 91.7145 12.544C91.7678 11.9147 91.8212 11.3173 91.8745 10.752C91.9278 10.176 91.9758 9.67467 92.0185 9.248L90.2905 14.928H88.6265L86.8665 9.248C86.9198 9.664 86.9732 10.1493 87.0265 10.704C87.0798 11.248 87.1278 11.8293 87.1705 12.448C87.2132 13.0667 87.2505 13.6907 87.2825 14.32C87.3145 14.9387 87.3305 15.52 87.3305 16.064V20H85.6985ZM94.6043 20L97.5803 8.32H99.8523L102.828 20H101.084L100.38 17.04H97.0683L96.3643 20H94.6043ZM97.3883 15.616H100.044L99.2443 12.24C99.1056 11.6427 98.9883 11.1253 98.8923 10.688C98.8069 10.24 98.7483 9.936 98.7163 9.776C98.6843 9.936 98.6256 10.24 98.5403 10.688C98.4549 11.1253 98.3376 11.6373 98.1883 12.224L97.3883 15.616ZM107.126 20V9.904H104.006V8.304H111.974V9.904H108.854V20H107.126ZM113.968 20V8.32H120.832V9.856H115.664V13.168H120.272V14.688H115.664V18.464H120.832V20H113.968Z"
+            fill="#C3F7E7" />
+          <defs>
+            <clipPath id="clip0_193_318">
+              <rect width="20" height="20" fill="white" transform="translate(0 4)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="brand-heading-container">
+        <h2 class="brand-heading">Automate<br>Operations<br>Your Team<br>Can't Scale.</h2>
+      </div>
+
+      <!-- Decorative sphere outline SVG bottom graphic -->
+      <svg class="sidebar-footer-graphic" width="480" height="317" viewBox="0 0 480 317" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_252_177)">
+          <path opacity="0.15"
+            d="M77.4216 415.857C30.115 372.112 0.499742 309.517 0.499745 240C0.499748 170.452 30.1518 107.818 77.4216 64.1426L77.4216 415.857ZM177.161 471.169C164.586 467.761 152.42 463.35 140.76 458.03L140.76 215.687L140.51 215.543L103.357 194.095L103.357 43.2871C126.081 27.4565 151.158 15.88 177.161 8.83104L177.161 471.169ZM276.903 476.669C265.031 478.508 252.878 479.472 240.5 479.497L240.5 265.995L240.25 265.851L203.097 244.407L203.097 3.333C226.651 -0.318389 251.767 -0.563888 276.903 3.333L276.903 476.669ZM376.643 436.716C365.202 444.687 353.022 451.676 340.24 457.572L340.24 316.308L339.99 316.163L302.838 294.715L302.838 8.83202C329.132 15.9603 354.186 27.6427 376.643 43.2871L376.643 436.716ZM479.498 240.001C479.498 309.518 449.883 372.113 402.576 415.858L402.576 64.1436C449.846 107.819 479.498 170.453 479.498 240.001Z"
+            stroke="#C3F7E7" />
+        </g>
+        <defs>
+          <clipPath id="clip0_252_177">
+            <rect width="480" height="317" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+
+    </aside>
+
+    <!-- Right Side Form Section -->
+    <main class="form-section">
+      <div class="form-wrapper">
+
+        <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="6" fill="#102758" fill-opacity="0.05" />
+          <g filter="url(#filter0_dd_213_462)">
+            <rect x="6.3999" y="6.40002" width="51.2" height="51.2" rx="4.8" fill="white" />
+            <g clip-path="url(#clip0_213_462)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M30.2291 17.8334C31.5198 17.8337 32.7662 18.3039 33.7355 19.1562C34.7048 20.0084 35.3307 21.1844 35.4962 22.4645C36.623 22.4561 37.7319 22.7465 38.7099 23.3062C39.6879 23.8659 40.5001 24.6748 41.0637 25.6505L43.8971 30.5565C44.7424 32.021 44.9714 33.7614 44.5336 35.3948C44.0957 37.0282 43.027 38.4207 41.5624 39.2661C40.0978 40.1115 38.3574 40.3405 36.724 39.9026C35.0907 39.4648 33.6981 38.396 32.8527 36.9315L32.0169 35.4836C32.9043 34.688 33.6138 33.7142 34.0991 32.6257C34.5844 31.5372 34.8345 30.3585 34.8332 29.1667C34.8353 27.6409 34.4246 26.143 33.6447 24.8317C33.3786 24.7357 33.1474 24.5623 32.9808 24.3339C32.8142 24.1054 32.7197 23.8322 32.7097 23.5496L32.7068 23.1289C32.7012 22.5521 32.4947 21.9952 32.1227 21.5543C31.7508 21.1134 31.2367 20.816 30.6691 20.7133C30.1015 20.6106 29.5158 20.7091 29.0129 20.9917C28.5101 21.2744 28.1216 21.7236 27.9142 22.2619C29.3174 22.5838 30.5892 23.3256 31.5602 24.3883C32.5313 25.4511 33.1556 26.7845 33.3499 28.211C33.5442 29.6374 33.2993 31.0892 32.6479 32.373C31.9965 33.6568 30.9694 34.7117 29.7035 35.3972L29.831 35.9072L29.8593 36.0305C29.9043 36.3218 29.8572 36.6199 29.7247 36.8833L29.3337 37.6667L29.7262 38.4501C29.8244 38.6468 29.8756 38.8636 29.8756 39.0834C29.8756 39.3032 29.8244 39.52 29.7262 39.7166L29.1666 40.8358V41.9167C29.1666 42.6682 28.8681 43.3888 28.3367 43.9202C27.8054 44.4515 27.0847 44.75 26.3332 44.75C25.5818 44.75 24.8611 44.4515 24.3298 43.9202C23.7984 43.3888 23.4999 42.6682 23.4999 41.9167V35.6579C22.113 35.0535 20.9561 34.0209 20.1986 32.7113C19.4412 31.4017 19.123 29.884 19.2907 28.3804C19.4585 26.8769 20.1033 25.4666 21.1307 24.3561C22.1581 23.2456 23.5142 22.4933 25.0002 22.2095C25.2199 20.9825 25.864 19.8718 26.8199 19.0719C27.7758 18.2719 28.9826 17.8335 30.2291 17.8334ZM26.3332 27.75C25.9575 27.75 25.5972 27.8993 25.3315 28.165C25.0658 28.4306 24.9166 28.791 24.9166 29.1667C24.9166 29.5424 25.0658 29.9028 25.3315 30.1684C25.5972 30.4341 25.9575 30.5834 26.3332 30.5834C26.709 30.5834 27.0693 30.4341 27.335 30.1684C27.6006 29.9028 27.7499 29.5424 27.7499 29.1667C27.7499 28.791 27.6006 28.4306 27.335 28.165C27.0693 27.8993 26.709 27.75 26.3332 27.75Z"
+                fill="#102758" />
+            </g>
+          </g>
+          <defs>
+            <filter id="filter0_dd_213_462" x="2.3999" y="5.60002" width="59.2" height="59.2"
+              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feMorphology radius="1.6" operator="erode" in="SourceAlpha" result="effect1_dropShadow_213_462" />
+              <feOffset dy="1.6" />
+              <feGaussianBlur stdDeviation="1.6" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.152941 0 0 0 0 0.345098 0 0 0 0.1 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_213_462" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feMorphology radius="0.8" operator="erode" in="SourceAlpha" result="effect2_dropShadow_213_462" />
+              <feOffset dy="3.2" />
+              <feGaussianBlur stdDeviation="2.4" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.152941 0 0 0 0 0.345098 0 0 0 0.08 0" />
+              <feBlend mode="normal" in2="effect1_dropShadow_213_462" result="effect2_dropShadow_213_462" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_213_462" result="shape" />
+            </filter>
+            <clipPath id="clip0_213_462">
+              <rect width="34" height="34" fill="white" transform="translate(15 15)" />
+            </clipPath>
+          </defs>
+        </svg>
+
+
+        <header class="form-header">
+          <h1 class="form-title">Sign in to your account</h1>
+          <p class="form-subtitle">Please enter your details to log into your account.</p>
+        </header>
+
+        <!-- Success Message Banner -->
+        <div id="success-banner" class="success-banner" role="alert">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd" />
+          </svg>
+          <span id="success-text">Success! You are now signed in.</span>
+        </div>
+
+        <!-- Form Element -->
+        <form id="login-form" class="login-form" action="#" method="POST" novalidate>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <div class="input-wrapper">
+              <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address"
+                autocomplete="username" required enterkeyhint="next">
+            </div>
+            <!-- Dynamic Accessible Error Indicator -->
+            <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+          </div>
+
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="current-password" class="form-label">Password</label>
+            <div class="input-wrapper">
+              <input type="password" id="current-password" name="password" class="form-input password-input"
+                placeholder="••••••••••••" autocomplete="current-password" required enterkeyhint="done">
+              <!-- Show/Hide Toggle Button -->
+              <button type="button" id="password-toggle" class="password-toggle" aria-label="Show password"
+                aria-pressed="false">
+                <!-- Eye open SVG icon -->
+                <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+            <!-- Dynamic Accessible Error Indicator -->
+            <div id="password-error" class="error-message" role="alert" aria-live="polite"></div>
+          </div>
+
+          <!-- Forgot Password -->
+          <div class="forgot-password-container">
+            <a href="#" class="forgot-password-link">Forgot password?</a>
+          </div>
+
+          <!-- Sign In Button -->
+          <button type="submit" id="submit-btn" class="submit-btn">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="btn-text">Sign In</span>
+            <span class="btn-arrow" aria-hidden="true">▸</span>
+          </button>
+
+        </form>
+
+        <footer class="form-footer">
+          Don't have an account? <a href="#" class="footer-link">Create one here</a>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
