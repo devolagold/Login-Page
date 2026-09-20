@@ -292,6 +292,29 @@ body {
   box-shadow: 0 0 0 3px rgba(10, 28, 62, 0.1);
 }
 
+/* Custom Select Dropdown Styling */
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%230A162F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 16px;
+  padding-right: 2.75rem;
+  cursor: pointer;
+}
+
+.form-select:invalid,
+.form-select.placeholder-active {
+  color: var(--color-text-muted);
+}
+
+.form-select option {
+  color: var(--color-text-primary);
+  background-color: var(--color-white);
+}
+
 /* Custom Password Input Wrapper & Toggle */
 .password-input {
   padding-right: 3rem;
@@ -415,6 +438,24 @@ body {
 
 .footer-link:hover {
   color: var(--color-navy-light);
+}
+
+/* Sign-up Form Layout Refinements */
+.signup-form .form-group {
+  margin-bottom: 1.15rem;
+}
+
+.signup-form .form-header {
+  margin-bottom: 1.5rem;
+  margin-top: 0.85rem;
+}
+
+.signup-form .submit-btn {
+  margin-top: 0.75rem;
+}
+
+.signup-form ~ .form-footer {
+  margin-top: 2rem;
 }
 
 /* Error States */
